@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: sprint-ingress
   annotations:
-    spec.ingressClassName: azure/application-gateway
+    kubernetes.io/ingress.class: azure/application-gateway
     appgw.ingress.kubernetes.io/override-frontend-port: "80"
 spec:
   rules:
