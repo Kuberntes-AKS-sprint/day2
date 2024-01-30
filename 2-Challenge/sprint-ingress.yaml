@@ -7,13 +7,13 @@ metadata:
     appgw.ingress.kubernetes.io/override-frontend-port: "80"
 spec:
   rules:
-  - host: {사용할 도메인 입력}
+  - host: {사용할 도메인 입력이 필요합니다.}
     http:
       paths:
       - pathType: Prefix
         path: /
         backend:
           service:
-            name: {Service 명 입력}
+            name: {여기에 입력해주세요.}
             port:
-              number: {Port 입력}
+              number: {입력이 필요해요.}
